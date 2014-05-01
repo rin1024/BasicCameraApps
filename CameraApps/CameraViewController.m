@@ -1,16 +1,14 @@
 //
-//  CameraAppsViewController.m
+//  CameraViewController.m
 //  CameraApps
 //
 //  Created by Yuki ANAI on 5/1/14.
 //  Copyright (c) 2014 Yuki ANAI. All rights reserved.
 //
-#import "CameraAppsViewController.h"
+#import "CameraViewController.h"
+#import <AudioToolbox/AudioToolbox.h>
 
-// @interface CameraAppsViewController ()
-// @end
-
-@implementation CameraAppsViewController
+@implementation CameraViewController
 @synthesize adjustingExposure, indicatorLayer;
 
 #define INDICATOR_RECT_SIZE 50.0
@@ -27,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.captureType = CAPTURE_TYPE_CAMERA; // 初期はカメラでキャプチャ
     self.statusLabel.hidden = YES; // カメラなので時間ラベルは非表示
     
@@ -121,6 +119,7 @@
             [self.captureManager startRecording];
             [self.recBtn setImage:self.recStopImage
                          forState:UIControlStateNormal];
+            AudioServicesPlaySystemSound(1117); // 録画の開始音
         }
         // 撮影終了
         else {
@@ -128,11 +127,13 @@
             
             [self.timer invalidate];
             self.timer = nil;
-            self.statusLabel.text = [NSString stringWithFormat:@"%.2f", 0.0];
+            self.statusLabel.text = [NSString stringWithFormat:@"%02d:%02d:%02d", 0, 0, 0];
+            self.title = [NSString stringWithFormat:@"%02d:%02d:%02d", 0, 0, 0];
             
             [self.captureManager stopRecording];
             [self.recBtn setImage:self.recStartImage
                          forState:UIControlStateNormal];
+            AudioServicesPlaySystemSound(1118); // 録画の停止音
         }
     }
 }
@@ -236,6 +237,7 @@
     int m = (recorded - s) / 60 % 60;
     int h = (recorded - s - m * 60) / 3600 % 3600;
     self.statusLabel.text = [NSString stringWithFormat:@"%02d:%02d:%02d", h, m, s];
+    self.title = [NSString stringWithFormat:@"%02d:%02d:%02d", h, m, s]; // TODO:
 }
 
 #pragma -

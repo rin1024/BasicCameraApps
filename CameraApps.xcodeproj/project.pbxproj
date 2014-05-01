@@ -15,14 +15,14 @@
 		B6615C0419121A19005CE0B7 /* CameraAppsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6615C0319121A19005CE0B7 /* CameraAppsAppDelegate.m */; };
 		B6615C0719121A19005CE0B7 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6615C0519121A19005CE0B7 /* Main_iPhone.storyboard */; };
 		B6615C0A19121A19005CE0B7 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6615C0819121A19005CE0B7 /* Main_iPad.storyboard */; };
-		B6615C0D19121A19005CE0B7 /* CameraAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6615C0C19121A19005CE0B7 /* CameraAppsViewController.m */; };
+		B6615C0D19121A19005CE0B7 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6615C0C19121A19005CE0B7 /* CameraViewController.m */; };
 		B6615C0F19121A19005CE0B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6615C0E19121A19005CE0B7 /* Images.xcassets */; };
 		B6615C1619121A19005CE0B7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6615C1519121A19005CE0B7 /* XCTest.framework */; };
 		B6615C1719121A19005CE0B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6615BF319121A19005CE0B7 /* Foundation.framework */; };
 		B6615C1819121A19005CE0B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6615BF719121A19005CE0B7 /* UIKit.framework */; };
 		B6615C2019121A19005CE0B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6615C1E19121A19005CE0B7 /* InfoPlist.strings */; };
 		B6615C2219121A19005CE0B7 /* CameraAppsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6615C2119121A19005CE0B7 /* CameraAppsTests.m */; };
-		B6615C3019121ACA005CE0B7 /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6615C2F19121ACA005CE0B7 /* PhotoCollectionViewController.m */; };
+		B6615C3019121ACA005CE0B7 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6615C2F19121ACA005CE0B7 /* CollectionViewController.m */; };
 		B6615C3319121B05005CE0B7 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6615C3219121B05005CE0B7 /* PhotoCell.m */; };
 		B6615C3619121B23005CE0B7 /* CameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6615C3519121B23005CE0B7 /* CameraManager.m */; };
 		B6615C3819121B4C005CE0B7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6615C3719121B4C005CE0B7 /* AssetsLibrary.framework */; };
@@ -56,16 +56,16 @@
 		B6615C0319121A19005CE0B7 /* CameraAppsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraAppsAppDelegate.m; sourceTree = "<group>"; };
 		B6615C0619121A19005CE0B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		B6615C0919121A19005CE0B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		B6615C0B19121A19005CE0B7 /* CameraAppsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraAppsViewController.h; sourceTree = "<group>"; };
-		B6615C0C19121A19005CE0B7 /* CameraAppsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraAppsViewController.m; sourceTree = "<group>"; };
+		B6615C0B19121A19005CE0B7 /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		B6615C0C19121A19005CE0B7 /* CameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		B6615C0E19121A19005CE0B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B6615C1419121A19005CE0B7 /* CameraAppsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraAppsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6615C1519121A19005CE0B7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B6615C1D19121A19005CE0B7 /* CameraAppsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CameraAppsTests-Info.plist"; sourceTree = "<group>"; };
 		B6615C1F19121A19005CE0B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B6615C2119121A19005CE0B7 /* CameraAppsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraAppsTests.m; sourceTree = "<group>"; };
-		B6615C2E19121ACA005CE0B7 /* PhotoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewController.h; sourceTree = "<group>"; };
-		B6615C2F19121ACA005CE0B7 /* PhotoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewController.m; sourceTree = "<group>"; };
+		B6615C2E19121ACA005CE0B7 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		B6615C2F19121ACA005CE0B7 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		B6615C3119121B05005CE0B7 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
 		B6615C3219121B05005CE0B7 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
 		B6615C3419121B23005CE0B7 /* CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
@@ -147,9 +147,9 @@
 		B6615BF919121A19005CE0B7 /* CameraApps */ = {
 			isa = PBXGroup;
 			children = (
-				B6615C2B19121A95005CE0B7 /* CameraManager */,
-				B6615C2C19121A9D005CE0B7 /* PhotoCollectionViewController */,
-				B6615C2D19121AAE005CE0B7 /* RootViewController */,
+				B6615C2B19121A95005CE0B7 /* View: Camera */,
+				B6615C2C19121A9D005CE0B7 /* View: Photo List */,
+				B6615C2D19121AAE005CE0B7 /* View: Root */,
 				B6615C0219121A19005CE0B7 /* CameraAppsAppDelegate.h */,
 				B6615C0319121A19005CE0B7 /* CameraAppsAppDelegate.m */,
 				B6615C0519121A19005CE0B7 /* Main_iPhone.storyboard */,
@@ -189,33 +189,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B6615C2B19121A95005CE0B7 /* CameraManager */ = {
+		B6615C2B19121A95005CE0B7 /* View: Camera */ = {
 			isa = PBXGroup;
 			children = (
 				B6615C3419121B23005CE0B7 /* CameraManager.h */,
 				B6615C3519121B23005CE0B7 /* CameraManager.m */,
 			);
-			name = CameraManager;
+			name = "View: Camera";
 			sourceTree = "<group>";
 		};
-		B6615C2C19121A9D005CE0B7 /* PhotoCollectionViewController */ = {
+		B6615C2C19121A9D005CE0B7 /* View: Photo List */ = {
 			isa = PBXGroup;
 			children = (
-				B6615C2E19121ACA005CE0B7 /* PhotoCollectionViewController.h */,
-				B6615C2F19121ACA005CE0B7 /* PhotoCollectionViewController.m */,
+				B6615C2E19121ACA005CE0B7 /* CollectionViewController.h */,
+				B6615C2F19121ACA005CE0B7 /* CollectionViewController.m */,
 				B6615C3119121B05005CE0B7 /* PhotoCell.h */,
 				B6615C3219121B05005CE0B7 /* PhotoCell.m */,
 			);
-			name = PhotoCollectionViewController;
+			name = "View: Photo List";
 			sourceTree = "<group>";
 		};
-		B6615C2D19121AAE005CE0B7 /* RootViewController */ = {
+		B6615C2D19121AAE005CE0B7 /* View: Root */ = {
 			isa = PBXGroup;
 			children = (
-				B6615C0B19121A19005CE0B7 /* CameraAppsViewController.h */,
-				B6615C0C19121A19005CE0B7 /* CameraAppsViewController.m */,
+				B6615C0B19121A19005CE0B7 /* CameraViewController.h */,
+				B6615C0C19121A19005CE0B7 /* CameraViewController.m */,
 			);
-			name = RootViewController;
+			name = "View: Root";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,9 +320,9 @@
 				B6615C0019121A19005CE0B7 /* main.m in Sources */,
 				B6615C3319121B05005CE0B7 /* PhotoCell.m in Sources */,
 				B6615C0419121A19005CE0B7 /* CameraAppsAppDelegate.m in Sources */,
-				B6615C0D19121A19005CE0B7 /* CameraAppsViewController.m in Sources */,
+				B6615C0D19121A19005CE0B7 /* CameraViewController.m in Sources */,
 				B6615C3619121B23005CE0B7 /* CameraManager.m in Sources */,
-				B6615C3019121ACA005CE0B7 /* PhotoCollectionViewController.m in Sources */,
+				B6615C3019121ACA005CE0B7 /* CollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

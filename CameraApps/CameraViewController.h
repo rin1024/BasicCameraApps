@@ -10,7 +10,7 @@
 //#import "SVProgressHUD.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 
-@interface CameraAppsViewController : UIViewController<CameraManagerDelegate> {
+@interface CameraViewController : UIViewController<CameraManagerDelegate> {
     NSTimeInterval startTime;
     BOOL isNeededToSave;
 }
